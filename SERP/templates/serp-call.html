@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extraStyle %}
+<link rel="stylesheet" href="{% static 'serp-callStyle.css' %}" />
+{% endblock %}
+{% block content %}
+<section class="searchBackground">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert">
+                <p>{{ message }}</p>
+            </div>
+        {% endfor%}
+    {% endif %}
+    <div class="search-serp">
+        <div class="title">Search Keyword</div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="keyword"><input type="text" name="keyword" placeholder="Keyword"></div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</section>
+{% endblock content %}

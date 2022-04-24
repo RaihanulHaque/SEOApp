@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extraStyle %}
+<link rel="stylesheet" href="{% static 'serp-callStyle.css' %}" />
+{% endblock %}
+{% block content %}
+<section class="resultBackground">
+    <br><br><br><br>
+    <div class="title">Fetched Keywords</div>
+    <div class="fetched-serp">
+        {% for item in items %}
+            <div class="fetched-serpBox">
+                <p>Type: {{ item.type }}</p>
+                <p>Rank: {{ item.rank_absolute }}</p>
+                <p>Title: {{ item.title }}</p>
+                <p>Domain: {{ item.domain }}</p>
+                <p>{{ item.url }}</p>
+                <p>{{ item.description }}</p>
+            </div>
+            <br><br>
+        {% endfor %}
+    </div>
+</section>
+{% endblock content %}
