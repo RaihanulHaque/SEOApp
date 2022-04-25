@@ -3,6 +3,7 @@ from django.contrib import messages
 from . import dict
 from . client import RestClient
 # Create your views here.
+# Test
 
 
 def search(request):
