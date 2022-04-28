@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extraStyle %}
+<link rel="stylesheet" href="{% static 'trafficAPI-callStyle.css' %}" />
+{% endblock %}
+{% block content %}
+<section class="searchBackground">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert">
+                <p>{{ message }}</p>
+            </div>
+        {% endfor%}
+    {% endif %}
+    <div class="search-website">
+        <div class="title">Search Website</div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="website"><input type="text" name="website" placeholder="Website"></div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</section>
+{% endblock content %}

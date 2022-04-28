@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'baseStyle.css' %}">
+
+    {% block extraStyle %} {% endblock %}
+    <title>Django SEO-API</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <a href="/">API KUN</a>
+        </div>
+        <button class="toggler">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </button>
+        <div class="nav-list-container">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+        <script src="{% static 'baseScript.js' %}"></script>
+    </nav>
+
+    <section class="registration">
+        {% block content %}
+        {% endblock %}
+    </section>
+
+</body>
+
+</html>

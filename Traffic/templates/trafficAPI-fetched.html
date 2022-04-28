@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extraStyle %}
+<link rel="stylesheet" href="{% static 'trafficAPI-fetchedStyle.css' %}" />
+{% endblock %}
+{% block content %}
+<section class="resultBackground">
+    <br><br><br><br>
+    <div class="title">Fetched Keywords</div>
+    <div class="fetched-traffic">
+        <div class="fetched-serpBox">
+            <p>Company: {{ items.company_name }}</p>
+            <p>HQ: {{ items.headquater }}</p>
+            <p>Revenue: {{ items.revenue }}</p>
+            <p>Website: {{ items.site_url }}</p>
+            <br>
+            <h2>Global Rank: {{ items.global_rank }}</h2>
+            <h2>Country Rank: {{ items.country_rank }}</h2>
+            <h2>Category Rank: {{ items.category_rank }}</h2>
+            <br>
+            <p>Audience Visits: {{ items.audience_visits }}</p>
+            <p>Bounce rate: {{ items.audience_bounce_rate }}%</p>
+            <p>Pages per visit: {{ items.audience_page_views_avg }}</p>
+            <p>Avg page duration: {{ items.audience_time_on_site_avg }}</p>
+            <br>
+        </div>
+        <div class="traffic-countries">
+            <h3>Geography & Country Targeting</h3>
+            {% for it in traffic_countries %}
+                <div class="Box">
+                    <p>Country: {{ it.country }}</p>
+                    <p>Visits: {{ it.value }}</p>
+                    <p>Percent: {{ it.percent }}%</p>
+                </div>
+                <br>
+            {% endfor %}
+        </div>
+        <br>
+        <div class="audience-interests">
+            <h3>Audience Interests</h3>
+            <h4>Top Categories</h4>
+            {% for line in top_categories %}
+                {% for it in line.values %}
+                <div class="Box">
+                    <p>Title: {{ it }}</p>
+                </div>
+                {% endfor %}
+                <br>
+            {% endfor %}
+            <br>
+            <h4>Other Visited Websites</h4>
+            {% for it in other_visited_sites %}
+                <p>{{ it }}</p>
+            {% endfor %}
+            <br>
+            <h4>Top Topics</h4>
+            {% for it in top_topics %}
+                <p>{{ it }}</p>
+            {% endfor %}
+            <br>
+        </div>
+        <div class="similar-sites">
+            <h3>Competitors & Similar Sites</h3>
+            <div class="box">
+                {% for it in similar_sites %}
+                    <p>{{ it.site }} --  {{ it.rank }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="marketing">
+            <h3>Marketing Channels Overview</h3>
+            <h4>Traffics</h4>
+            <p>Direct: {{ source_lite.0.direct_percent }}</p>
+            <p>Organic: {{ source_lite.1.orgsearch_percent }}</p>
+            <p>Search Ad: {{ source_lite.2.searchad_percent }}</p>
+            <p>Referrals: {{ source_lite.3.referrals_percent }}</p>
+            <p>Social: {{ source_lite.4.social_percent }}</p>
+            <p>Display: {{ source_lite.5.displayad_percent }}</p>
+            <p>Mail: {{ source_lite.6.mail_percent }}</p>
+            <br>
+            <h4>Keyword Search Traffic</h4>
+            {% for it in top_keywords %}
+                <p>{{ it.keyword }} --  {{ it.percent }}%</p>
+            {% endfor %}
+            <br>
+            <h4>Referral Traffic</h4>
+            {% for it in top_referring %}
+                <p>{{ it.site }} --  {{ it.percent }}%</p>
+            {% endfor %}
+            <br>
+            <h4>Social Media Traffic</h4>
+            {% for it in top_socials %}
+                <p>{{ it.site }} --  {{ it.percent }}%</p>
+            {% endfor %}
+            <br>
+        </div>
+    </div>
+</section>
+{% endblock content %}
