@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  /*user-select: none;*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.8rem;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+/*brand could be name or image*/
+.brand a {
+  color: #0b0753;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar .nav-list {
+  padding: 3rem 0;
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nav-list li {
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.nav-list li a {
+  display: block;
+  text-decoration: none;
+  font-weight: 650;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  color: inherit;
+}
+
+.nav-list li a:hover {
+  background: #c5f1ff;
+  border: 1px solid #c5f1ff;
+  border-radius: 10px;
+}
+
+.nav-list li form {
+  margin-top: -1px;
+  margin-left: 30px;
+}
+
+.nav-list li form input {
+  padding: 6px;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid navy;
+  height: 35px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.navbar .toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  outline: none;
+}
+
+.toggler .line1,
+.line3 {
+  display: block;
+  width: 27px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: #222;
+  margin-bottom: 0.4rem;
+  /*from hamburger to cross*/
+  transition: 0.4s;
+}
+
+.toggler .line2 {
+  display: block;
+  width: 20px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: #222;
+  margin-bottom: 0.4rem;
+  /*from hamburger to cross*/
+  transition: 0.4s;
+}
+
+.cross .line1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.cross .line2 {
+  opacity: 0;
+}
+
+.cross .line3 {
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
+@media (max-width: 769px) {
+  /*hide nav by transform*/
+  .nav-list-container {
+    position: fixed;
+    width: 83%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    background-color: #f6f7ff;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-out;
+    opacity: 0.9;
+  }
+
+  #footer .start .social ul {
+    padding-top: 15px;
+  }
+}
+
+/*make nav visible by transform*/
+.nav-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+    padding: 0.4rem 0;
+  }
+
+  /*make nav-list horizontal on big screens*/
+  .navbar .nav-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .nav-list li {
+    margin: 0 0.4rem;
+  }
+
+  .nav-list li a {
+    margin: 0 5px;
+  }
+
+  /*hide toggler button on big screens*/
+  .navbar .toggler {
+    display: none;
+  }
+}
