@@ -1,24 +1,99 @@
-{% extends "base.html" %}
 {% load static %}
-{% block extraStyle %}
-<link rel="stylesheet" href="{% static 'serp-fetchedStyle.css' %}" />
-{% endblock %}
-{% block content %}
-<section class="resultBackground">
-    <br><br><br><br>
-    <div class="title">Fetched Keywords</div>
-    <div class="fetched-serp">
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'table.css' %}" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>API fetch result for "Sultan's Dine"</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Rank</th>
+          <th>Title</th>
+          <th>Domain</th>
+          <th>Description</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
         {% for item in items %}
-            <div class="fetched-serpBox">
-                <p>Type: {{ item.type }}</p>
-                <p>Rank: {{ item.rank_absolute }}</p>
-                <p>Title: {{ item.title }}</p>
-                <p>Domain: {{ item.domain }}</p>
-                <p>{{ item.url }}</p>
-                <p>{{ item.description }}</p>
+        <tr>
+          <td>{{ item.type }}</td>
+          <td>{{ item.rank_absolute }}</td>
+          <td>{{ item.title }}</td>
+          <td>{{ item.domain }}</td>
+          <td><p>{{ item.description }}</p></td>
+          <td>
+            <div class="tooltip">
+              <a href="{{ item.url }}">LINK</a>
+
+              <span class="tooltiptext">{{ item.url }}</span>
             </div>
-            <br><br>
+          </td>
+        </tr>
         {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Design || Future Web</title>
+    <link rel="stylesheet" href="{% static 'table.css' %}" />
+  </head>
+
+  <body>
+    <h3>API fetch result for "Sultan's Dine"</h3>
+    <div class="header_fixed">
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Rank</th>
+            <th>Title</th>
+            <th>Domain</th>
+            <th>Description</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr>
+            <td>{{ item.type }}</td>
+            <td>{{ item.rank_absolute }}</td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.domain }}</td>
+            <td><p>{{ item.description }}</p></td>
+            <td>
+              <div class="tooltip">
+                <a href="{{ item.url }}">LINK</a>
+
+                <span class="tooltiptext">{{ item.url }}</span>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
-</section>
-{% endblock content %}
+  </body>
+</html>

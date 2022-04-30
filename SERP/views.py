@@ -44,6 +44,7 @@ def search(request):
                 #     count = count+1
                 # for i in range(10, len(items)):
                 #     del items[10]
+                # including the keyword which was searched as well
                 return redirect("result")
             else:
                 messages.error(

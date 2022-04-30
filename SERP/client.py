@@ -3,20 +3,24 @@ from base64 import b64encode
 from json import loads
 from json import dumps
 
+
 class RestClient:
     domain = "api.dataforseo.com"
 
     def __init__(self):
-        self.username = "raihanulhaque007@gmail.com"
-        self.password = "7c08349f8b9875f3"
+        # self.username = "raihanulhaque007@gmail.com"
+        # self.password = "7c08349f8b9875f3"
+        self.username = "abrarnazib@gmail.com"
+        self.password = "dde01410ba2ad9e3"
 
     def request(self, path, method, data=None):
         connection = HTTPSConnection(self.domain)
         try:
             base64_bytes = b64encode(
                 ("%s:%s" % (self.username, self.password)).encode("ascii")
-                ).decode("ascii")
-            headers = {'Authorization' : 'Basic %s' %  base64_bytes, 'Content-Encoding' : 'gzip'}
+            ).decode("ascii")
+            headers = {'Authorization': 'Basic %s' % base64_bytes,
+                       'Content-Encoding': 'gzip'}
             connection.request(method, path, headers=headers, body=data)
             response = connection.getresponse()
             return loads(response.read().decode())
