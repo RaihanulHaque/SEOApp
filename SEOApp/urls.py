@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('serp/', include("SERP.urls")),
     path('traffic/', include("Traffic.urls")),
+    path('onpage/', include("onpage.urls")),
 ]
