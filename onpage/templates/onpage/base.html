@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <title>Onpage API - {{ content.title }}</title>
     <!-- <link rel="icon" href="/img/weather.png" /> -->
     <link rel="stylesheet" href="{% static 'onpage/style.css' %}" />
   </head>
@@ -13,22 +13,16 @@
   <body>
     <div class="main-content">
       <header>
-        <h1>Weather App</h1>
+        <h1>Onpage API</h1>
 
-        <a href="/">Weather</a>
-        <a href="/about">About</a>
-        <a href="/help">Help</a>
+        <a href="/">Home</a>
+        <a href="#">Previous Searches</a>
+        <!-- <a href="#">Search</a> -->
       </header>
-      <p>Use this site to get your weather information.</p>
-      <form>
-        <input placeholder="Location" />
-        <button>Search</button>
-      </form>
-      <p id="message-1"></p>
-      <p id="message-2"></p>
+      {% block content %} {% endblock %}
     </div>
     <footer>
-      <p>Created By Nazib Abrar</p>
+      <p>Onpage API by Abrar</p>
     </footer>
     <!-- <script src="js/app.js"></script> -->
   </body>

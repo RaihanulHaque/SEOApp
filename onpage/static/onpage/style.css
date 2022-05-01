@@ -1,7 +1,11 @@
+*{
+  margin : 0px;
+  padding: 0px;
+}
 body {
     color: #333333;
     font-family: arial;
-    max-width: 600px;
+    width: 100%;
     /* Constraining how wide our content will be */
     margin: 0 auto;
     padding: 5px 16px;
@@ -24,7 +28,7 @@ body {
   
   header {
     margin-top: 16px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
   
   h1 {
@@ -52,4 +56,15 @@ body {
     border: 1px solid #888888;
     background: #888888;
     padding: 8px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+  }
+  th {
+    text-align: left;
   }

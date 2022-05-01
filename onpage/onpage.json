@@ -1,0 +1,559 @@
+{
+  "id": "04261329-3712-0275-0000-24bde33019c6",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "1.3679 sec.",
+  "cost": 0.00125,
+  "result_count": 1,
+  "path": ["v3", "on_page", "instant_pages"],
+  "data": {
+    "api": "on_page",
+    "function": "instant_pages",
+    "enable_javascript": true,
+    "check_spell": false,
+    "url": "https://breakthroughmaths.com/leaving-cert-timetable/"
+  },
+  "result": [
+    {
+      "crawl_progress": "finished",
+      "crawl_status": null,
+      "crawl_gateway_address": "94.130.93.30",
+      "items_count": 1,
+      "items": [
+        {
+          "resource_type": "html",
+          "status_code": 200,
+          "location": null,
+          "url": "https://breakthroughmaths.com/leaving-cert-timetable/",
+          "meta": {
+            "title": "Leaving Cert Timetable 2022 [Simplified]",
+            "charset": 65001,
+            "follow": true,
+            "generator": null,
+            "htags": {
+              "h1": ["Leaving Cert Timetable 2022 [Simplified]"],
+              "h2": [
+                "Leaving Certificate Exam Timetable 2022",
+                "Leaving Cert Higher Level Timetable 2022",
+                "Leaving Cert Ordinary Level Timetable 2022",
+                "Leaving Cert Applied Timetable 2022",
+                "Conclusion",
+                "FAQ on Leaving Cert Timetable",
+                "Share this Article",
+                "Grinds Info",
+                "Free Resources",
+                "Easy Links",
+                "Legal",
+                "Contact Us"
+              ],
+              "h3": [
+                "1. Is the Leaving Cert Timetable The Same Every Year?",
+                "2. How Long is the Maths Leaving Cert Exam?",
+                "3. How Many Marks is the Irish Leaving Cert?"
+              ]
+            },
+            "description": "According to the schedule, this year’s Leaving Cert will begin on Wednesday, June 8, and run until Tuesday, June 28. The Leaving Cert Applied will begin on the same day but end on Thursday, June 16.",
+            "favicon": "https://breakthroughmaths.com/wp-content/uploads/2022/03/cropped-Untitled-design-11-32x32.png",
+            "meta_keywords": null,
+            "canonical": "https://breakthroughmaths.com/leaving-cert-timetable/",
+            "internal_links_count": 32,
+            "external_links_count": 7,
+            "inbound_links_count": 0,
+            "images_count": 9,
+            "images_size": 0,
+            "scripts_count": 51,
+            "scripts_size": 0,
+            "stylesheets_count": 0,
+            "stylesheets_size": 0,
+            "title_length": 40,
+            "description_length": 198,
+            "render_blocking_scripts_count": 17,
+            "render_blocking_stylesheets_count": 0,
+            "cumulative_layout_shift": 0,
+            "content": {
+              "plain_text_size": 4645,
+              "plain_text_rate": 0.02093690981127483,
+              "plain_text_word_count": 800,
+              "automated_readability_index": 8.787170833333334,
+              "coleman_liau_readability_index": 9.743949999999998,
+              "dale_chall_readability_index": 7.063716666666668,
+              "flesch_kincaid_readability_index": 55.81125,
+              "smog_readability_index": 17.78686850342507,
+              "description_to_content_consistency": 1,
+              "title_to_content_consistency": 1,
+              "meta_keywords_to_content_consistency": null
+            },
+            "deprecated_tags": null,
+            "duplicate_meta_tags": null,
+            "spell": null,
+            "social_media_tags": {
+              "og:locale": "en_US",
+              "og:type": "article",
+              "og:title": "Leaving Cert Timetable 2022 [Simplified]",
+              "og:description": "According to the schedule, this year’s Leaving Cert will begin on Wednesday, June 8, and run until Tuesday, June 28. The Leaving Cert Applied will begin on the same day but end on Thursday, June 16.",
+              "og:url": "https://breakthroughmaths.com/leaving-cert-timetable/",
+              "og:site_name": "Breakthrough Maths",
+              "article:publisher": "https://www.facebook.com/mathgrinds",
+              "article:section": "Uncategorized",
+              "og:updated_time": "2022-04-08T15:01:27+00:00",
+              "og:image": "https://breakthroughmaths.com/wp-content/uploads/2022/04/lc-timetable-fi-1024x500.png",
+              "og:image:secure_url": "https://breakthroughmaths.com/wp-content/uploads/2022/04/lc-timetable-fi-1024x500.png",
+              "og:image:width": "1024",
+              "og:image:height": "500",
+              "og:image:alt": "leaving cert timetable",
+              "og:image:type": "image/png",
+              "article:published_time": "2022-04-08T15:01:24+00:00",
+              "article:modified_time": "2022-04-08T15:01:27+00:00",
+              "twitter:card": "summary_large_image",
+              "twitter:title": "Leaving Cert Timetable 2022 [Simplified]",
+              "twitter:description": "According to the schedule, this year’s Leaving Cert will begin on Wednesday, June 8, and run until Tuesday, June 28. The Leaving Cert Applied will begin on the same day but end on Thursday, June 16.",
+              "twitter:image": "https://breakthroughmaths.com/wp-content/uploads/2022/04/lc-timetable-fi-1024x500.png",
+              "twitter:label1": "Written by",
+              "twitter:data1": "T.J Hegarty",
+              "twitter:label2": "Time to read",
+              "twitter:data2": "3 minutes"
+            }
+          },
+          "page_timing": {
+            "time_to_interactive": 0,
+            "dom_complete": 0,
+            "largest_contentful_paint": 0,
+            "first_input_delay": 0,
+            "connection_time": 0,
+            "time_to_secure_connection": 0,
+            "request_sent_time": 0,
+            "waiting_time": 0,
+            "download_time": 0,
+            "duration_time": 0,
+            "fetch_start": 0,
+            "fetch_end": 0
+          },
+          "onpage_score": 97.07,
+          "total_dom_size": 221934,
+          "custom_js_response": null,
+          "resource_errors": {
+            "errors": [
+              {
+                "line": 366,
+                "column": 387,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 512,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 575,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 638,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 688,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 698,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 767,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1184,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1296,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1346,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1396,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1446,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1456,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1525,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 1946,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2084,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2134,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2210,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2260,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2270,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2339,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2755,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2867,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 2930,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3006,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3056,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3066,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3135,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3551,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3663,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3726,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3776,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3826,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3836,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 3905,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4327,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4452,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4515,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4591,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4641,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4651,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 4720,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5140,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5278,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5328,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5393,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5443,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5453,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5522,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 5941,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 6067,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 6130,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 6206,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 6256,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 6266,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              },
+              {
+                "line": 366,
+                "column": 6335,
+                "message": "The closing tag and the currently open tag do not match.",
+                "status_code": 501
+              }
+            ],
+            "warnings": [
+              {
+                "line": 1,
+                "column": 67,
+                "message": "Has node with more than 60 childs.",
+                "status_code": 1
+              }
+            ]
+          },
+          "broken_resources": false,
+          "broken_links": false,
+          "duplicate_title": false,
+          "duplicate_description": false,
+          "duplicate_content": false,
+          "click_depth": 0,
+          "size": 221934,
+          "encoded_size": 35178,
+          "total_transfer_size": 35178,
+          "fetch_time": "2022-04-26 13:29:25 +00:00",
+          "cache_control": {
+            "cachable": true,
+            "ttl": 600
+          },
+          "checks": {
+            "no_content_encoding": false,
+            "high_loading_time": false,
+            "is_redirect": false,
+            "is_4xx_code": false,
+            "is_5xx_code": false,
+            "is_broken": false,
+            "is_www": false,
+            "is_https": true,
+            "is_http": false,
+            "high_waiting_time": false,
+            "no_doctype": false,
+            "has_html_doctype": true,
+            "canonical": true,
+            "no_encoding_meta_tag": false,
+            "no_h1_tag": false,
+            "https_to_http_links": false,
+            "size_greater_than_3mb": false,
+            "meta_charset_consistency": true,
+            "has_meta_refresh_redirect": false,
+            "has_render_blocking_resources": false,
+            "low_content_rate": true,
+            "high_content_rate": false,
+            "low_character_count": false,
+            "high_character_count": false,
+            "small_page_size": false,
+            "large_page_size": false,
+            "low_readability_rate": false,
+            "irrelevant_description": false,
+            "irrelevant_title": false,
+            "irrelevant_meta_keywords": false,
+            "title_too_long": false,
+            "title_too_short": false,
+            "deprecated_html_tags": false,
+            "duplicate_meta_tags": false,
+            "duplicate_title_tag": false,
+            "no_image_alt": true,
+            "no_image_title": true,
+            "no_description": false,
+            "no_title": false,
+            "no_favicon": false,
+            "seo_friendly_url": true,
+            "flash": false,
+            "frame": false,
+            "lorem_ipsum": false,
+            "seo_friendly_url_characters_check": true,
+            "seo_friendly_url_dynamic_check": true,
+            "seo_friendly_url_keywords_check": true,
+            "seo_friendly_url_relative_length_check": true
+          },
+          "content_encoding": "br",
+          "media_type": "text/html",
+          "server": "nginx",
+          "is_resource": false,
+          "last_modified": {
+            "header": null,
+            "sitemap": null,
+            "meta_tag": "2022-04-08 15:01:27 +00:00"
+          }
+        }
+      ]
+    }
+  ]
+}

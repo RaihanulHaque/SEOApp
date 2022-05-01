@@ -1,0 +1,7 @@
+{% extends "onpage/base.html" %} {% load static %} {% block content %}
+<form method="post" action="{% url 'onpage-result' %}">
+  {% csrf_token %}
+  <input placeholder="URL" name="url" />
+  <input name="submit" type="submit" value="submit" />
+</form>
+{% endblock %}

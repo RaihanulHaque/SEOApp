@@ -1,0 +1,18 @@
+{% extends 'onpage/base.html' %} {% load static %} {% block content %}
+<h3>
+  Search result for
+  <a href="{{items.url}}" target="_blank">{{dict.url}}</a>
+</h3>
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+  {% for key, value in dict.items %}
+  <tr>
+    <th>{{ key }}</th>
+    <td>{{ value}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{%endblock %}
